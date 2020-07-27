@@ -1,0 +1,28 @@
+.statistics {
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.title {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  list-style: none;
+  display: flex;
+}
+.item {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.percentage,
+.label {
+  color: white;
+}

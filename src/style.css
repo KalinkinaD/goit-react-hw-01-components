@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h2 {
+  padding-top: 10px;
+}
+h2::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: grey;
+}
+
+​img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
