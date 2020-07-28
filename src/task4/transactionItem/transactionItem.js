@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Transaction = ({ items }) => {
+const Transaction = ({ datas }) => {
   return (
     <>
-      {items.map((item) => (
-        <tr key={item.id}>
-          <td>{item.type}</td>
-          <td>{item.amount}</td>
-          <td>{item.currency}</td>
+      {datas.map((data) => (
+        <tr key={data.id}>
+          <td>{data.type}</td>
+          <td>{data.amount}</td>
+          <td>{data.currency}</td>
         </tr>
       ))}
     </>
@@ -17,7 +17,7 @@ const Transaction = ({ items }) => {
 export default Transaction;
 
 Transaction.propTypes = {
-  items: PropTypes.arrayOf(
+  datas: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,

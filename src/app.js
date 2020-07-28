@@ -25,7 +25,7 @@ export default function App() {
       <h2>Task-03</h2>
       <FriendsList friends={friends} />
       <h2>Task-04</h2>
-      <TransactionHistory items={transactions} />
+      <TransactionHistory datas={transactions} />
     </>
   );
 }
