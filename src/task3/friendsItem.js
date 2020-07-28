@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./friendList.module.css";
 
-const FriendsListItem = ({ friends }) => {
+const FriendsItem = ({ friends }) => {
   return (
     <>
       {friends.map((friend) => (
@@ -24,9 +24,9 @@ const FriendsListItem = ({ friends }) => {
     </>
   );
 };
-export default FriendsListItem;
+export default FriendsItem;
 
-FriendsListItem.propTypes = {
+FriendsItem.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
